@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'get_schwiftyregular';
+    src: url('./get_schwifty.ttf') format('woff2'),
+         url('./get_schwifty.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    font-family:'get_schwiftyregular';
+}
+
+body{
+    background-color:  #181818;
+    display: flex;
+    flex-direction: row;
+    font-family:'get_schwiftyregular'; 
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+
+}
+
+.container {
+    background-image: url(https://i.pinimg.com/originals/64/5c/8d/645c8d877f6e2aad7fa6545140c72a52.gif);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    width: 700px;
+  }
+#blurbox{
+    margin-top:20px;
+    border-radius: 50%;
+    height: 650px;
+    width: 650px;
+    position: absolute;
+    background-color: rgba(133, 202, 110, 0.3);
+}
+
+.choices{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: 150px;
+    width: 500px;
+    align-self: center;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.correct{
+    align-self: center;
+}
+
+
+.b1{backdrop-filter: blur(1px)}
+.b2{backdrop-filter: blur(2px)}
+.b3{backdrop-filter: blur(3px)}
+.b4{backdrop-filter: blur(4px)}
+.b5{backdrop-filter: blur(5px)}
+.b6{backdrop-filter: blur(6px)}
+.b7{backdrop-filter: blur(7px)}
+.b8{backdrop-filter: blur(8px)}
+.b9{backdrop-filter: blur(9px)}
+.b10{backdrop-filter: blur(10px)}
+.b11{backdrop-filter: blur(11px)}
+.b12{backdrop-filter: blur(12px)}
+.b13{backdrop-filter: blur(13px)}
+.b14{backdrop-filter: blur(14px)}
+.b15{backdrop-filter: blur(15px)}
+.b16{backdrop-filter: blur(16px)}
+.b17{backdrop-filter: blur(17px)}
+.b18{backdrop-filter: blur(18px)}
+.b19{backdrop-filter: blur(19px)}
+.b20{backdrop-filter: blur(20px)}
+.b21{backdrop-filter: blur(21px)}
+.b22{backdrop-filter: blur(22px)}
+.b23{backdrop-filter: blur(23px)}
+.b24{backdrop-filter: blur(24px)}
+.b25{backdrop-filter: blur(25px)}
+
+.display-screen{
+    height: 100%;
+    width: 100%;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+.rightside{
+    height: 500px;
+    width: 500px;
+    border: solid green;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.title{
+    position: absolute;
+    text-align: center;
+    margin-bottom: 550px;
+    font-size: 100px;
+}
+
+.start{
+    position: absolute;
+    margin-bottom: -20px;
+
+}
+
+.game-screen{
+    display: flex;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family:'get_schwiftyregular';
+}
+
+.gameover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.hide{
+    display: none;
+}

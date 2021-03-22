@@ -1,9 +1,9 @@
-# Shwift Rick?
+# Schwift Rick?
 ## A game for true fans
 Test your knowledge on the infiinite number of Ricks in the universe
 
 ### Overview
-* Which Rick is a trivia game where you have to quickly identify the name of whichever rick comes through the portal. The picture first appears blurry or distorted and slowly comes in to focus. Guess the name of the Rick before time runs out in order move on to the next level. You start the game with 5 points
+* Schwift Rick is a trivia game where you have to quickly identify the name of whichever rick comes through the portal. The picture first appears blurry or distorted and slowly comes in to focus. Guess the name of the Rick before time runs out in order move on to the next level. You start the game with 5 points
 If Rick fully comes in to focus before you guess correctly, you lose a point.
 If you guess correctly you gain a point. The goal is to stay alive and make it to 10.
 
