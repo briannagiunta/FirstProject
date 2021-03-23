@@ -131,7 +131,10 @@ p{
     font-size: 25px;
     font-family:'get_schwiftyregular';
 }
-
+p:hover{
+    cursor: pointer;
+    color: white;
+}
 
 .gameover{
     display: flex;

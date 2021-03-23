@@ -18,7 +18,7 @@ const playAgain = document.querySelector(".playagain")
 //game constants
 const nameArray = [];
 const picArray = [];
-const decoyNames = ["Past Rick", "Cop Rick", "Replacement Rick", "Insurance Rick", "Sales Rick", "Supervisor Rick", "Cool Rick", "Cowboy rick", "Tiny Rick", "Teacher Rick"]
+const decoyNames = ["Past Rick", "Cop Rick", "Replacement Rick", "Insurance Rick", "Sales Rick", "Supervisor Rick", "Cool Rick", "Cowboy rick", "Business Rick", "Teacher Rick", "Evil Rick", "Future Rick"]
 
 
 //bank of ricks
@@ -31,12 +31,16 @@ class Ricks {
     }
 } 
 
-const rickSanchez = new Ricks("Rick Sanchez", "./assets/Rick_Sanchez.png");
+const rickSanchez = new Ricks("Rick C-137", "./assets/Rick_Sanchez.png");
 const pickleRick = new Ricks("Pickle Rick", "./assets/pickleRick1.png");
 const fascistRick = new Ricks("Fascist Rick", "./assets/facistrick.png");
 const doofusRick = new Ricks("Doofus Rick", "./assets/Doofus_Rick.png");
 const cronenbergRick = new Ricks("Cronenberg Rick", "./assets/cronenberg .png");
-
+const shrimpRick = new Ricks("Shrimp Rick", "./assets/shrimpRick-removebg-preview.png");
+const tinyRick = new Ricks("Tiny Rick", "./assets/tinyRick-removebg-preview.png");
+const toxicRick = new Ricks("Toxic Rick", "./assets/toxicrick.png");
+const scientistRick = new Ricks("The Scientist Formally Known as Rick", "./assets/Scientist_Known_As_Rick_Sprite.PNG.png")
+const rickDSanchez = new Ricks("Rick D Sanchez |||", "./assets/rickDsanchez3-removebg-preview.png")
 
 
 //game variables
@@ -79,12 +83,12 @@ const levelUp = ()=>{
     resetChoices();
     currentChoice = false;
     let tempDecoyNames = decoyNames.map((x) => x)
-    randPic = Math.floor(Math.random() * picArray.length)
+    currentRound = Math.floor(Math.random() * picArray.length)
     randChoice = Math.floor(Math.random() * 4)
-    currentPic.src = picArray[randPic]
-    choices[randChoice].innerHTML = nameArray[randPic]
-    nameArray.splice(randPic, 1)
-    picArray.splice(randPic, 1)
+    currentPic.src = picArray[currentRound]
+    choices[randChoice].innerHTML = nameArray[currentRound]
+    nameArray.splice(currentRound, 1)
+    picArray.splice(currentRound, 1)
     choices.forEach(function(choice){
         let randNum = Math.floor(Math.random() * tempDecoyNames.length)
         if(choice.innerHTML){
@@ -111,9 +115,8 @@ const unBlurPicture = () =>{
             gameOverScreen.classList.remove("hide")
             clearInterval(interval)
             gameIsLive = false;
-            
-        } else if(blurryBlur.classList.length === 0 && currentChoice === true){
-            clearInterval(interval)
+        } else{
+            return
         }
     }, 200);
     
@@ -136,7 +139,7 @@ const resetChoices = () =>{
 }
 
 const checkForWin = () =>{
-    if(currentScore === 5){
+    if(currentScore === 10){
         score.innerHTML = "Wubba Lubba Dub Dub !!!";
         blurPicture()
     }
@@ -148,7 +151,7 @@ const checkForWin = () =>{
 startButton.addEventListener('click', () =>{
     currentChoice = false;
     gameIsLive = true;
-    blurPicture()
+    // blurPicture()
     startGame()
 })
 //if correct answer is clicked, correct gif shows, score increases by 1, goes to next level and blurs picture 
