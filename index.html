@@ -33,7 +33,10 @@
 
             <div class = "container2"> 
                 <h1>Show Me What You've Got!</h1>
-                <p class = "score">Score: </p>
+                <div class = "timescore"> 
+                    <p id = "time">Timer: 5</p>
+                    <p id = "score">Score: </p>
+                </div>
                 <img class = "correct" src=""/>
                 <section class = choices> 
                     <button id = "c1"></button>
@@ -41,6 +44,7 @@
                     <button id = "c3"></button>
                     <button id = "c4"></button>
                 </section>
+                <p class = "winner hide">You Did It!!! Play Again?</p>
             </div>
         </div>
         
@@ -49,10 +53,8 @@
             <p class = "again">Try Again</p>
         </div>
         
-        <div class = 'winner hide'>
-            <img src = "https://media1.giphy.com/media/Qs0QEnugOy0xIsFkpD/giphy.gif?cid=ecf05e47ml8zeycsp9rv1ni8e0p5tha87spoi6i9jee6vhbq&rid=giphy.gif"/>
-            <p class = "playagain">You Did It!!! Play Again?</p>
-        </div>
+        
+        
 
 
         <script src="./script.js" async defer></script>

@@ -56,9 +56,15 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-image: url(assets/rickstarbackground.png);
+    background-size: cover;
+    max-width: 539.5px;
+    max-height: 700px;
 }
 .correct{
     align-self: center;
+    min-width: 480px;
+    min-height: 270px;
 }
 
 
@@ -115,7 +121,10 @@ h1{
 .start{
     position: absolute;
     color: green
-
+}
+.start:hover{
+    cursor: pointer;
+    color: white;
 }
 span{
     color: rgb(4, 150, 247);
@@ -130,10 +139,6 @@ p{
     color:green;
     font-size: 25px;
     font-family:'get_schwiftyregular';
-}
-p:hover{
-    cursor: pointer;
-    color: white;
 }
 
 .gameover{
@@ -152,7 +157,19 @@ p:hover{
     height: 100%;
     width: 100%;
 }
-
+.winner:hover{
+    cursor: pointer;
+    color: white;
+}
+.again:hover{
+    cursor: pointer;
+    color: white;
+}
+.timescore {
+    display: flex;
+    justify-content: space-around;
+    color: rgb(4, 150, 247);
+}
 
 
 .hide{
