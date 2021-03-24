@@ -3,15 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bluuuuur bitch blur</title>
+        <title>Schwift Rick</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
+        <audio id = "theme" controls loop>
+            <source src = "./assets/Rick-and-Morty-Theme-Song.mp3">
+        </audio>
         <div class = "display-screen">
             <h1 class="title">Schwift Rick</h1>
             <div class = "leftside">
-                <img src = "./assets/6327BCA5-435C-4B42-8ECE-0082BDCBDCD6.jpeg"/>
+                <img id= "leftside" src = "./assets/6327BCA5-435C-4B42-8ECE-0082BDCBDCD6.jpeg"/>
             </div> 
             <div class = "rightside">
                 <p>Rick: Morty, quick! Cover the Portal!<br><br>
@@ -19,7 +22,6 @@
                     Rick: You don't have a choice! These Ricks are going to destroy us if we let them in!<br><br>
                     <br>
                     <span> Help Rick and Morty fight off the enemies coming through the portal by correctly guessing the name of the incoming Rick before its too late.</span>
-                
                 </p>
             </div>
             <p class = "start">Get Schwifty</p>
@@ -52,11 +54,7 @@
             <img src="https://cdn.mos.cms.futurecdn.net/igBXt7E6nixGcsF6iGxgib-970-80.jpg.webp"/>
             <p class = "again">Try Again</p>
         </div>
-        
-        
-        
-
-
+        <audio id ="showme" src="https://sound.peal.io/ps/audios/000/000/710/original/Show_me_what_you_got!.wav?1469744432" type = "audio/mpeg"></audio>
         <script src="./script.js" async defer></script>
     </body>
 </html>

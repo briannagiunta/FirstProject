@@ -15,6 +15,9 @@ const over = document.querySelector(".again")
 const winButton = document.querySelector(".winner")
 const playAgain = document.querySelector(".playagain")
 const timer = document.querySelector("#time")
+const showMe = document.querySelector("#showme")
+const themeSong = document.querySelector("#theme")
+
 
 //game constants
 const nameArray = [];
@@ -58,7 +61,9 @@ let timeInterval
 let time = 5
 
 
-
+window.onload=()=>{
+    themeSong.play();
+}
 
 //event handelers
 
@@ -71,7 +76,12 @@ const startGame = () =>{
     gameOverScreen.classList.add("hide")
     timer.classList.remove("hide")
     resetArrays();
-    levelUp()
+    themeSong.pause()
+    showMe.play()
+    setTimeout(() =>{
+        levelUp()
+        themeSong.play()
+    },2000)
 }
 
 
@@ -213,3 +223,4 @@ winButton.addEventListener('click', () =>{
     startGame();
     winButton.classList.add("hide")
 })
+
